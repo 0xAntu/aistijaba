@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in $(cat $1);do 
+    curl --write-out "%{http_code}  $i\n" --silent --output /dev/null $i
+    done
+
+# aistijaba
+# CopyRight © 0xAntu
